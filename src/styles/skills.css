@@ -1,0 +1,81 @@
+.box {
+    background-color: #000;
+}
+/* .container {
+    height: 82vh;
+} */
+.heading {
+    color:black;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    padding-top: 0.9rem;
+}
+.heading span {
+    color: yellow;
+}
+.row {
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #411766;
+    padding: 10px;
+}
+.box .container-fluid {
+    padding: 1rem;
+    justify-content: center;
+}
+#colm {
+    background-color: #000;
+    margin: 1rem;
+}
+.info img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.info span {
+    text-align: center;
+    padding: 5px;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+/* media query starts*/
+
+@media screen and (min-width:1035px) {
+    .box .container-fluid .row {
+        padding-left: 3rem;
+    }
+}
+@media screen and (max-width:1012px) {
+    #colm {
+        margin: 2rem;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1012px) {
+    .box .container-fluid .row {
+        padding-left: 2rem;
+    }
+}
+@media screen and (max-width:991px) {
+    .info {
+        margin: 0;
+    }
+    #colm {
+        margin: 0;
+    }
+}
+@media screen and (max-width:380px) {
+    .info span {
+        padding: 5px;
+        color:white;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+/* media query ends */

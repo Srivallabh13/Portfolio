@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+* {
+    font-family: 'Poppins', serif;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    background-color:rgb(64, 6, 156);
+    padding: 0.4rem 8%;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+  
+.navbar-brand img {
+    border-radius: 20px;
+}
+
+.navbar-brand span {
+    padding-left: 0.2rem;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Cinzel', serif;
+    color: white;
+    padding: 15px 15px 12px 50px;
+    font-weight: 400;
+    cursor: default;
+}
+
+.navbar-brand:hover {
+    color: rgb(255, 217, 0);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.navbar .container-fluid .nav li a:hover{
+    color: rgb(255, 217, 0);
+    border-bottom: 0.2rem solid rgb(255, 217, 0);
+}
+
+li {
+    padding-left: 2rem;
+}
+
+a {
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    font-size:larger;
+    text-transform: capitalize;
+}
+/* hamburger start */
+#menu {
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(236, 234, 241);
+    display: none;
+}
+  @media (max-width: 547px) {
+    #menu {
+      display: block;
+    }
+    .navbar-nav {
+      position: fixed;
+      top: 4.3rem;
+      z-index: 9999;
+      right: -120%;
+      width: 75%;
+      height: 100%;
+      background-color: #0e0f25;
+      transition: all 0.3s ease;
+    }
+    .navbar-nav ul {
+      flex-flow: column;
+      padding: 2px;
+    }
+    .navbar-nav ul li {
+      text-align: center;
+      border-radius: 0.5rem;
+      margin: 10px;
+      font-size: 20px;
+    }
+    .navbar-nav ul li a {
+      display: block;
+      padding: 10px;
+      text-align: left;
+    }
+    .navbar-nav.slide {
+      right: 0;
+    }
+  }
+/* hamburger end*/
+
+/* media query starts */
+
+@media (max-width: 751px) {
+      .navbar-brand span {
+        display: none;
+    }
+    .navbar-nav {
+        padding: 10px 10px 10px 10px;
+        font-weight: 200;
+    }
+    li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        margin:0;
+        width: 100%;
+    }
+    .navbar-brand {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Cinzel', serif;
+        padding: 10px 10px 10px 20px;
+        color: white;
+        font-weight: 400;
+        cursor: default;
+    }
+    li {
+        padding-left: 1rem;
+    }
+    .navbar {
+        padding: 10px 2%;
+    }
+}
+/* media query ends */

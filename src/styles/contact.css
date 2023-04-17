@@ -1,0 +1,168 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    background-color:  #e5ecfb;;
+}
+
+.contact .container {
+    width:60vw;
+}
+.contact .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem;
+}
+.contact .heading {
+    box-sizing: content-box;
+    padding-bottom:10px;
+    color: black;
+    text-align: center;
+}
+
+.contact .heading i {
+    padding-right: 5px;
+}
+.contact .heading span {
+    color: coral;
+}
+
+.contact .person {
+    width: 30vw;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.contact .infom {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .field {
+    padding: 10px;
+    width: 100%;
+    height: 3.7rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form .infom .field i {
+    position:absolute;
+    display: inline;
+    top: 35%;
+    padding-left: 10px;
+}
+
+.contact form .infom .message {
+    display: flex;
+    margin: 10px;
+}
+
+.contact form .infom .message i {
+    position: absolute;
+    display: flex;
+    padding: 8px;
+}
+
+.contact .content .button-div {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    margin: 13px;
+}
+
+.contact .infom #message, .full_name, .phone_no, .mail, .query {
+    width: 100%;
+  height: 100%;
+  padding: 0 16px 0 48px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgb(51, 51, 51);
+  background: #e5ecfb;
+}
+.contact .infom #message {
+    padding-top: 0.2rem;
+}
+
+.contact .button-div button {
+    padding: 15px;
+    border: none;
+    font-weight: 500;
+    color: white;
+    background-color:#2506ad;
+    cursor:pointer;
+    border-radius: 4px;
+}
+
+.contact .button-div button i {
+    position: relative;
+    font-size: 15px;
+    bottom: 1px;
+    padding: 5px;
+}
+.contact .button-div button:hover {
+    background-color: #421cecf5;
+    box-shadow: 0px 4px 4px #8d8b92f5;
+}
+.contact .button-div button:hover i {
+    left: 4px;
+}
+/* media query starts */
+
+@media screen and (max-width:1000px) {
+    body {
+        margin: 2% 25% 0 25%;
+    }
+    .contact {
+        min-height: 70vh;
+      }
+      .contact .container .content {
+        padding: 18px 12px;
+      }
+      .contact .content .person{
+        display: none;
+      }
+      .contact .content form {
+        width: 100%;
+        margin-right: 2rem;
+      }
+}
+@media screen and (max-width:400px) {
+    form .button-div .button-box {
+        font-weight: 400;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    form .button-div .button-box i {
+        font-size: 12px;
+    }
+    .contact .container {
+        width:90%;
+    }
+}
+
+
+@media screen and (max-width:300px) {
+    .contact {
+        margin: 0px;
+    }
+    form .button-div .button-box {
+        padding: 7px;
+        font-weight: 300;
+        font-size: 15px;
+    }
+    form .button-div .button-box i {
+        display: none;
+    }
+    .infom #message, .name, .phone, .email, .query {
+        padding-left: 30px;
+    }
+}
+/* media query ends */
